@@ -1,5 +1,10 @@
 results
-FASTQ_files
+!results/renumberedcounts/*.csv
+!results/renumberedcounts/*.pdf
+!results/fracsurviveaboveavg/*.csv
+!results/fracsurviveaboveavg/*.pdf
+!results/plots/
+results/FASTQ_files
 run.sbatch
 slurm*
 *.pyc
