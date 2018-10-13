@@ -1,0 +1,109 @@
+2018-10-10 18:25:38,407 - INFO - Beginning execution of dms2_batch_fracsurvive in directory /fh/fast/bloom_j/computational_notebooks/jmlee34/2018/HA_stalkbnAb_MAP
+
+2018-10-10 18:25:38,407 - INFO - Progress is being logged to ./results/fracsurviveaboveavg/WSNsummary.log
+2018-10-10 18:25:38,423 - INFO - Version information:
+	Time and date: Wed Oct 10 18:25:38 2018
+	Platform: Linux-3.13.0-143-generic-x86_64-with-debian-jessie-sid
+	Python version: 3.6.5 |Anaconda, Inc.| (default, Apr 29 2018, 16:14:56)  [GCC 7.2.0]
+	dms_tools2 version: 2.3.0
+	Bio version: 1.72
+	HTSeq version: 0.11.0
+	pandas version: 0.23.4
+	numpy version: 1.15.1
+	IPython version: 6.5.0
+	jupyter version: 1.0.0
+	matplotlib version: 3.0.0
+	plotnine version: 0.4.0
+	natsort version: 5.4.1
+	pystan version: 2.16.0.0
+	scipy version: 1.1.0
+	seaborn version: 0.9.0
+	phydmslib version: 2.3.1
+	statsmodels version: 0.9.0
+	rpy2 version: 2.9.1
+	regex version: 2.4.146
+	umi_tools version unknown
+
+2018-10-10 18:25:38,423 - INFO - Parsed the following arguments:
+	outdir = ./results/fracsurviveaboveavg/
+	ncpus = -1
+	use_existing = yes
+	indir = ./results/renumberedcounts
+	chartype = codon_to_aa
+	aboveavg = yes
+	excludestop = yes
+	pseudocount = 5
+	mincount = 0
+	batchfile = ./results/fracsurvive/WSNbatch.csv
+	summaryprefix = WSNsummary
+
+2018-10-10 18:25:38,423 - INFO - Parsing info from ./results/fracsurvive/WSNbatch.csv
+2018-10-10 18:25:38,471 - INFO - Read the following sample information:
+group,name,sel,mock,err,libfracsurvive,grouplabel,antibody
+WSN-FI6v3-100ng-ml,replicate-1a,WSN-L1-FI6v3-100ng-ml-r1,WSN-L1-mock-r1-A,WSN-WTplasmid-A,0.01662,WSN vs FI6v3 (100 ng/ml),FI6v3
+WSN-FI6v3-100ng-ml,replicate-1b,WSN-L1-FI6v3-100ng-ml-r2,WSN-L1-mock-r2-A,WSN-WTplasmid-A,0.0139,WSN vs FI6v3 (100 ng/ml),FI6v3
+WSN-FI6v3-100ng-ml,replicate-2,WSN-L2-FI6v3-100ng-ml,WSN-L2-mock-A,WSN-WTplasmid-A,0.02322,WSN vs FI6v3 (100 ng/ml),FI6v3
+WSN-FI6v3-100ng-ml,replicate-3,WSN-L3-FI6v3-100ng-ml,WSN-L3-mock-A,WSN-WTplasmid-A,0.00903,WSN vs FI6v3 (100 ng/ml),FI6v3
+WSN-FI6v3-200ng-ml,replicate-1a,WSN-L1-FI6v3-200ng-ml-r1,WSN-L1-mock-r1-A,WSN-WTplasmid-A,0.00465,WSN vs FI6v3 (200 ng/ml),FI6v3
+WSN-FI6v3-200ng-ml,replicate-1b,WSN-L1-FI6v3-200ng-ml-r2,WSN-L1-mock-r2-A,WSN-WTplasmid-A,0.00345,WSN vs FI6v3 (200 ng/ml),FI6v3
+WSN-FI6v3-200ng-ml,replicate-2,WSN-L2-FI6v3-200ng-ml,WSN-L2-mock-A,WSN-WTplasmid-A,0.00278,WSN vs FI6v3 (200 ng/ml),FI6v3
+WSN-FI6v3-200ng-ml,replicate-3,WSN-L3-FI6v3-200ng-ml,WSN-L3-mock-A,WSN-WTplasmid-A,0.00144,WSN vs FI6v3 (200 ng/ml),FI6v3
+WSN-CR9114-100ng-ml,replicate-1,WSN-L1-CR9114-100ng-ml,WSN-L1-mock-C,WSN-WTplasmid-B,0.00204,WSN vs CR9114 (100 ng/ml),CR9114
+WSN-CR9114-100ng-ml,replicate-2,WSN-L2-CR9114-100ng-ml,WSN-L2-mock-C,WSN-WTplasmid-B,0.00186,WSN vs CR9114 (100 ng/ml),CR9114
+WSN-CR9114-100ng-ml,replicate-3,WSN-L3-CR9114-100ng-ml,WSN-L3-mock-C,WSN-WTplasmid-B,0.00168,WSN vs CR9114 (100 ng/ml),CR9114
+WSN-CR9114-70ng-ml,replicate-1,WSN-L1-CR9114-70ng-ml,WSN-L1-mock-C,WSN-WTplasmid-B,0.005,WSN vs CR9114 (70 ng/ml),CR9114
+WSN-CR9114-70ng-ml,replicate-2,WSN-L2-CR9114-70ng-ml,WSN-L2-mock-C,WSN-WTplasmid-B,0.00443,WSN vs CR9114 (70 ng/ml),CR9114
+WSN-CR9114-70ng-ml,replicate-3,WSN-L3-CR9114-70ng-ml,WSN-L3-mock-C,WSN-WTplasmid-B,0.00274,WSN vs CR9114 (70 ng/ml),CR9114
+WSN-CR9114-50ng-ml,replicate-1,WSN-L1-CR9114-50ng-ml,WSN-L1-mock-C,WSN-WTplasmid-B,0.01018,WSN vs CR9114 (50 ng/ml),CR9114
+WSN-CR9114-50ng-ml,replicate-2,WSN-L2-CR9114-50ng-ml,WSN-L2-mock-C,WSN-WTplasmid-B,0.00949,WSN vs CR9114 (50 ng/ml),CR9114
+WSN-CR9114-50ng-ml,replicate-3,WSN-L3-CR9114-50ng-ml,WSN-L3-mock-C,WSN-WTplasmid-B,0.006840000000000001,WSN vs CR9114 (50 ng/ml),CR9114
+
+
+2018-10-10 18:25:38,506 - INFO - Running dms2_fracsurvive on all samples...
+2018-10-10 18:26:00,702 - INFO - Completed runs of dms2_fracsurvive.
+
+2018-10-10 18:26:00,730 - INFO - Analyzing the fracsurvive values for the 4 samples in group WSN-FI6v3-100ng-ml.
+2018-10-10 18:26:00,731 - INFO - Plotting sitefracsurvive correlations to ./results/fracsurviveaboveavg/WSNsummary_WSN-FI6v3-100ng-ml-mutfracsurvivecorr.pdf
+2018-10-10 18:26:03,876 - INFO - Plotting sitefracsurvive correlations to ./results/fracsurviveaboveavg/WSNsummary_WSN-FI6v3-100ng-ml-avgfracsurvivecorr.pdf
+2018-10-10 18:26:05,865 - INFO - Plotting sitefracsurvive correlations to ./results/fracsurviveaboveavg/WSNsummary_WSN-FI6v3-100ng-ml-maxfracsurvivecorr.pdf
+2018-10-10 18:26:07,703 - INFO - Writing mean mutfracsurvive to ./results/fracsurviveaboveavg/WSNsummary_WSN-FI6v3-100ng-ml-meanmutfracsurvive.csv
+2018-10-10 18:26:07,867 - INFO - Writing mean sitefracsurvive to ./results/fracsurviveaboveavg/WSNsummary_WSN-FI6v3-100ng-ml-meansitefracsurvive.csv
+2018-10-10 18:26:07,895 - INFO - Writing median mutfracsurvive to ./results/fracsurviveaboveavg/WSNsummary_WSN-FI6v3-100ng-ml-medianmutfracsurvive.csv
+2018-10-10 18:26:08,182 - INFO - Writing median sitefracsurvive to ./results/fracsurviveaboveavg/WSNsummary_WSN-FI6v3-100ng-ml-mediansitefracsurvive.csv
+2018-10-10 18:26:08,214 - INFO - Analyzing the fracsurvive values for the 4 samples in group WSN-FI6v3-200ng-ml.
+2018-10-10 18:26:08,214 - INFO - Plotting sitefracsurvive correlations to ./results/fracsurviveaboveavg/WSNsummary_WSN-FI6v3-200ng-ml-mutfracsurvivecorr.pdf
+2018-10-10 18:26:11,275 - INFO - Plotting sitefracsurvive correlations to ./results/fracsurviveaboveavg/WSNsummary_WSN-FI6v3-200ng-ml-avgfracsurvivecorr.pdf
+2018-10-10 18:26:13,213 - INFO - Plotting sitefracsurvive correlations to ./results/fracsurviveaboveavg/WSNsummary_WSN-FI6v3-200ng-ml-maxfracsurvivecorr.pdf
+2018-10-10 18:26:15,013 - INFO - Writing mean mutfracsurvive to ./results/fracsurviveaboveavg/WSNsummary_WSN-FI6v3-200ng-ml-meanmutfracsurvive.csv
+2018-10-10 18:26:15,164 - INFO - Writing mean sitefracsurvive to ./results/fracsurviveaboveavg/WSNsummary_WSN-FI6v3-200ng-ml-meansitefracsurvive.csv
+2018-10-10 18:26:15,188 - INFO - Writing median mutfracsurvive to ./results/fracsurviveaboveavg/WSNsummary_WSN-FI6v3-200ng-ml-medianmutfracsurvive.csv
+2018-10-10 18:26:15,350 - INFO - Writing median sitefracsurvive to ./results/fracsurviveaboveavg/WSNsummary_WSN-FI6v3-200ng-ml-mediansitefracsurvive.csv
+2018-10-10 18:26:15,378 - INFO - Analyzing the fracsurvive values for the 3 samples in group WSN-CR9114-100ng-ml.
+2018-10-10 18:26:15,379 - INFO - Plotting sitefracsurvive correlations to ./results/fracsurviveaboveavg/WSNsummary_WSN-CR9114-100ng-ml-mutfracsurvivecorr.pdf
+2018-10-10 18:26:17,867 - INFO - Plotting sitefracsurvive correlations to ./results/fracsurviveaboveavg/WSNsummary_WSN-CR9114-100ng-ml-avgfracsurvivecorr.pdf
+2018-10-10 18:26:19,114 - INFO - Plotting sitefracsurvive correlations to ./results/fracsurviveaboveavg/WSNsummary_WSN-CR9114-100ng-ml-maxfracsurvivecorr.pdf
+2018-10-10 18:26:20,317 - INFO - Writing mean mutfracsurvive to ./results/fracsurviveaboveavg/WSNsummary_WSN-CR9114-100ng-ml-meanmutfracsurvive.csv
+2018-10-10 18:26:20,460 - INFO - Writing mean sitefracsurvive to ./results/fracsurviveaboveavg/WSNsummary_WSN-CR9114-100ng-ml-meansitefracsurvive.csv
+2018-10-10 18:26:20,486 - INFO - Writing median mutfracsurvive to ./results/fracsurviveaboveavg/WSNsummary_WSN-CR9114-100ng-ml-medianmutfracsurvive.csv
+2018-10-10 18:26:20,635 - INFO - Writing median sitefracsurvive to ./results/fracsurviveaboveavg/WSNsummary_WSN-CR9114-100ng-ml-mediansitefracsurvive.csv
+2018-10-10 18:26:20,658 - INFO - Analyzing the fracsurvive values for the 3 samples in group WSN-CR9114-70ng-ml.
+2018-10-10 18:26:20,658 - INFO - Plotting sitefracsurvive correlations to ./results/fracsurviveaboveavg/WSNsummary_WSN-CR9114-70ng-ml-mutfracsurvivecorr.pdf
+2018-10-10 18:26:22,637 - INFO - Plotting sitefracsurvive correlations to ./results/fracsurviveaboveavg/WSNsummary_WSN-CR9114-70ng-ml-avgfracsurvivecorr.pdf
+2018-10-10 18:26:23,753 - INFO - Plotting sitefracsurvive correlations to ./results/fracsurviveaboveavg/WSNsummary_WSN-CR9114-70ng-ml-maxfracsurvivecorr.pdf
+2018-10-10 18:26:24,845 - INFO - Writing mean mutfracsurvive to ./results/fracsurviveaboveavg/WSNsummary_WSN-CR9114-70ng-ml-meanmutfracsurvive.csv
+2018-10-10 18:26:24,977 - INFO - Writing mean sitefracsurvive to ./results/fracsurviveaboveavg/WSNsummary_WSN-CR9114-70ng-ml-meansitefracsurvive.csv
+2018-10-10 18:26:24,999 - INFO - Writing median mutfracsurvive to ./results/fracsurviveaboveavg/WSNsummary_WSN-CR9114-70ng-ml-medianmutfracsurvive.csv
+2018-10-10 18:26:25,114 - INFO - Writing median sitefracsurvive to ./results/fracsurviveaboveavg/WSNsummary_WSN-CR9114-70ng-ml-mediansitefracsurvive.csv
+2018-10-10 18:26:25,144 - INFO - Analyzing the fracsurvive values for the 3 samples in group WSN-CR9114-50ng-ml.
+2018-10-10 18:26:25,144 - INFO - Plotting sitefracsurvive correlations to ./results/fracsurviveaboveavg/WSNsummary_WSN-CR9114-50ng-ml-mutfracsurvivecorr.pdf
+2018-10-10 18:26:27,632 - INFO - Plotting sitefracsurvive correlations to ./results/fracsurviveaboveavg/WSNsummary_WSN-CR9114-50ng-ml-avgfracsurvivecorr.pdf
+2018-10-10 18:26:28,902 - INFO - Plotting sitefracsurvive correlations to ./results/fracsurviveaboveavg/WSNsummary_WSN-CR9114-50ng-ml-maxfracsurvivecorr.pdf
+2018-10-10 18:26:30,048 - INFO - Writing mean mutfracsurvive to ./results/fracsurviveaboveavg/WSNsummary_WSN-CR9114-50ng-ml-meanmutfracsurvive.csv
+2018-10-10 18:26:30,182 - INFO - Writing mean sitefracsurvive to ./results/fracsurviveaboveavg/WSNsummary_WSN-CR9114-50ng-ml-meansitefracsurvive.csv
+2018-10-10 18:26:30,206 - INFO - Writing median mutfracsurvive to ./results/fracsurviveaboveavg/WSNsummary_WSN-CR9114-50ng-ml-medianmutfracsurvive.csv
+2018-10-10 18:26:30,348 - INFO - Writing median sitefracsurvive to ./results/fracsurviveaboveavg/WSNsummary_WSN-CR9114-50ng-ml-mediansitefracsurvive.csv
+2018-10-10 18:26:30,369 - INFO - Plotting mean avgfracsurvive to ./results/fracsurviveaboveavg/WSNsummary_meanavgfracsurvive.pdf
+2018-10-10 18:26:31,578 - INFO - Plotting mean maxfracsurvive to ./results/fracsurviveaboveavg/WSNsummary_meanmaxfracsurvive.pdf
+2018-10-10 18:26:32,579 - INFO - Plotting median avgfracsurvive to ./results/fracsurviveaboveavg/WSNsummary_medianavgfracsurvive.pdf
+2018-10-10 18:26:33,606 - INFO - Plotting median maxfracsurvive to ./results/fracsurviveaboveavg/WSNsummary_medianmaxfracsurvive.pdf
+2018-10-10 18:26:34,546 - INFO - Successful completion of dms2_batch_fracsurvive

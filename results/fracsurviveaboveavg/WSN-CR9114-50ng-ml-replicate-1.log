@@ -1,0 +1,77 @@
+2018-10-10 18:25:55,275 - INFO - Beginning execution of dms2_fracsurvive in directory /fh/fast/bloom_j/computational_notebooks/jmlee34/2018/HA_stalkbnAb_MAP
+
+2018-10-10 18:25:55,275 - INFO - Progress is being logged to ./results/fracsurviveaboveavg/WSN-CR9114-50ng-ml-replicate-1.log
+2018-10-10 18:25:55,282 - INFO - Version information:
+	Time and date: Wed Oct 10 18:25:55 2018
+	Platform: Linux-3.13.0-143-generic-x86_64-with-debian-jessie-sid
+	Python version: 3.6.5 |Anaconda, Inc.| (default, Apr 29 2018, 16:14:56)  [GCC 7.2.0]
+	dms_tools2 version: 2.3.0
+	Bio version: 1.72
+	HTSeq version: 0.11.0
+	pandas version: 0.23.4
+	numpy version: 1.15.1
+	IPython version: 6.5.0
+	jupyter version: 1.0.0
+	matplotlib version: 3.0.0
+	plotnine version: 0.4.0
+	natsort version: 5.4.1
+	pystan version: 2.16.0.0
+	scipy version: 1.1.0
+	seaborn version: 0.9.0
+	phydmslib version: 2.3.1
+	statsmodels version: 0.9.0
+	rpy2 version: 2.9.1
+	regex version: 2.4.146
+	umi_tools version unknown
+
+2018-10-10 18:25:55,283 - INFO - Parsed the following arguments:
+	outdir = ./results/fracsurviveaboveavg/
+	ncpus = 3
+	use_existing = yes
+	indir = ./results/renumberedcounts
+	chartype = codon_to_aa
+	aboveavg = yes
+	excludestop = yes
+	pseudocount = 5.0
+	mincount = 0
+	name = WSN-CR9114-50ng-ml-replicate-1
+	sel = WSN-L1-CR9114-50ng-ml
+	mock = WSN-L1-mock-C
+	libfracsurvive = 0.01018
+	err = WSN-WTplasmid-B
+
+2018-10-10 18:25:55,287 - INFO - Reading selected sample counts from WSN-L1-CR9114-50ng-ml
+2018-10-10 18:25:55,324 - INFO - Reading mock-selected sample counts from WSN-L1-mock-C
+2018-10-10 18:25:55,335 - INFO - Reading error-control sample counts from WSN-WTplasmid-B
+2018-10-10 18:25:55,345 - INFO - Computing fracsurvive for each mutation...
+2018-10-10 18:25:55,345 - INFO - These are the fracsurvive **above** the library average of 0.01018
+2018-10-10 18:25:59,749 - INFO - Mutations with largest mutfracsurvive:
+site wildtype mutation  mutfracsurvive
+     235        T        R            0.26
+     175        E        S            0.20
+(HA2)203        L        V            0.12
+      46        S        M            0.12
+       2        A        V            0.11
+      -8        K        M            0.11
+     56A        I        A            0.10
+     188        S        F            0.10
+     158        G        T            0.10
+      78        S        D            0.09
+
+2018-10-10 18:25:59,750 - INFO - Writing to ./results/fracsurviveaboveavg/WSN-CR9114-50ng-ml-replicate-1_mutfracsurvive.csv
+2018-10-10 18:25:59,786 - INFO - Computing sitefracsurvive...
+2018-10-10 18:25:59,804 - INFO - Sites with largest avgfracsurvive:
+site  avgfracsurvive  maxfracsurvive
+    235            0.01            0.26
+     46            0.01            0.12
+    175            0.01            0.20
+      2            0.01            0.11
+     -8            0.01            0.11
+    280            0.01            0.06
+    208            0.01            0.04
+(HA2)47            0.01            0.05
+    188            0.01            0.10
+    56A            0.01            0.10
+
+2018-10-10 18:25:59,804 - INFO - Writing to ./results/fracsurviveaboveavg/WSN-CR9114-50ng-ml-replicate-1_sitefracsurvive.csv
+2018-10-10 18:25:59,811 - INFO - Successful completion of dms2_fracsurvive

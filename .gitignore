@@ -1,9 +1,10 @@
-results
 !results/renumberedcounts/*.csv
 !results/renumberedcounts/*.pdf
 !results/fracsurviveaboveavg/*.csv
 !results/fracsurviveaboveavg/*.pdf
 !results/plots/
+results/codoncounts
+results/fracsurvive
 results/FASTQ_files
 run.sbatch
 slurm*

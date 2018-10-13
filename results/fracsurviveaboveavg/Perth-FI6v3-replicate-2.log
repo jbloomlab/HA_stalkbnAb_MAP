@@ -1,0 +1,77 @@
+2018-10-10 18:27:52,597 - INFO - Beginning execution of dms2_fracsurvive in directory /fh/fast/bloom_j/computational_notebooks/jmlee34/2018/HA_stalkbnAb_MAP
+
+2018-10-10 18:27:52,597 - INFO - Progress is being logged to ./results/fracsurviveaboveavg/Perth-FI6v3-replicate-2.log
+2018-10-10 18:27:52,605 - INFO - Version information:
+	Time and date: Wed Oct 10 18:27:52 2018
+	Platform: Linux-3.13.0-143-generic-x86_64-with-debian-jessie-sid
+	Python version: 3.6.5 |Anaconda, Inc.| (default, Apr 29 2018, 16:14:56)  [GCC 7.2.0]
+	dms_tools2 version: 2.3.0
+	Bio version: 1.72
+	HTSeq version: 0.11.0
+	pandas version: 0.23.4
+	numpy version: 1.15.1
+	IPython version: 6.5.0
+	jupyter version: 1.0.0
+	matplotlib version: 3.0.0
+	plotnine version: 0.4.0
+	natsort version: 5.4.1
+	pystan version: 2.16.0.0
+	scipy version: 1.1.0
+	seaborn version: 0.9.0
+	phydmslib version: 2.3.1
+	statsmodels version: 0.9.0
+	rpy2 version: 2.9.1
+	regex version: 2.4.146
+	umi_tools version unknown
+
+2018-10-10 18:27:52,605 - INFO - Parsed the following arguments:
+	outdir = ./results/fracsurviveaboveavg/
+	ncpus = 11
+	use_existing = yes
+	indir = ./results/renumberedcounts
+	chartype = codon_to_aa
+	aboveavg = yes
+	excludestop = yes
+	pseudocount = 5.0
+	mincount = 0
+	name = Perth-FI6v3-replicate-2
+	sel = Perth-L2-FI6v3-12ug-ml
+	mock = Perth-L2mock
+	libfracsurvive = 0.04329
+	err = Perth-WTplasmid
+
+2018-10-10 18:27:52,609 - INFO - Reading selected sample counts from Perth-L2-FI6v3-12ug-ml
+2018-10-10 18:27:52,640 - INFO - Reading mock-selected sample counts from Perth-L2mock
+2018-10-10 18:27:52,648 - INFO - Reading error-control sample counts from Perth-WTplasmid
+2018-10-10 18:27:52,654 - INFO - Computing fracsurvive for each mutation...
+2018-10-10 18:27:52,655 - INFO - These are the fracsurvive **above** the library average of 0.04329
+2018-10-10 18:27:56,062 - INFO - Mutations with largest mutfracsurvive:
+site wildtype mutation  mutfracsurvive
+(HA2)45        I        R            1.60
+(HA2)53        N        G            1.44
+(HA2)45        I        Q            1.25
+(HA2)45        I        A            0.91
+(HA2)45        I        S            0.85
+(HA2)45        I        E            0.84
+(HA2)53        N        D            0.83
+(HA2)53        N        S            0.77
+(HA2)53        N        R            0.77
+(HA2)49        N        D            0.69
+
+2018-10-10 18:27:56,063 - INFO - Writing to ./results/fracsurviveaboveavg/Perth-FI6v3-replicate-2_mutfracsurvive.csv
+2018-10-10 18:27:56,102 - INFO - Computing sitefracsurvive...
+2018-10-10 18:27:56,120 - INFO - Sites with largest avgfracsurvive:
+site  avgfracsurvive  maxfracsurvive
+ (HA2)45            0.45            1.60
+ (HA2)53            0.38            1.44
+ (HA2)42            0.15            0.66
+(HA2)113            0.11            0.26
+ (HA2)57            0.09            0.56
+     323            0.07            0.39
+  (HA2)4            0.06            0.37
+ (HA2)47            0.05            0.28
+ (HA2)49            0.05            0.69
+(HA2)124            0.04            0.15
+
+2018-10-10 18:27:56,120 - INFO - Writing to ./results/fracsurviveaboveavg/Perth-FI6v3-replicate-2_sitefracsurvive.csv
+2018-10-10 18:27:56,131 - INFO - Successful completion of dms2_fracsurvive

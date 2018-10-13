@@ -1,0 +1,65 @@
+2018-10-10 20:37:52,743 - INFO - Beginning execution of dms2_logoplot in directory /fh/fast/bloom_j/computational_notebooks/jmlee34/2018/HA_stalkbnAb_MAP
+
+2018-10-10 20:37:52,744 - INFO - Progress is being logged to ./results/fracsurviveaboveavg/Perth-FI6v3.log
+2018-10-10 20:37:52,750 - INFO - Version information:
+	Time and date: Wed Oct 10 20:37:52 2018
+	Platform: Linux-3.13.0-143-generic-x86_64-with-debian-jessie-sid
+	Python version: 3.6.5 |Anaconda, Inc.| (default, Apr 29 2018, 16:14:56)  [GCC 7.2.0]
+	dms_tools2 version: 2.3.0
+	Bio version: 1.72
+	HTSeq version: 0.11.0
+	pandas version: 0.23.4
+	numpy version: 1.15.1
+	IPython version: 6.5.0
+	jupyter version: 1.0.0
+	matplotlib version: 3.0.0
+	plotnine version: 0.4.0
+	natsort version: 5.4.1
+	pystan version: 2.16.0.0
+	scipy version: 1.1.0
+	seaborn version: 0.9.0
+	phydmslib version: 2.3.1
+	statsmodels version: 0.9.0
+	rpy2 version: 2.9.1
+	regex version: 2.4.146
+	umi_tools version unknown
+
+2018-10-10 20:37:52,750 - INFO - Parsed the following arguments:
+	outdir = ./results/fracsurviveaboveavg/
+	ncpus = -1
+	use_existing = yes
+	prefs = None
+	diffsel = None
+	fracsurvive = ./results/fracsurviveaboveavg/antibody_FI6v3_Perth_median.csv
+	diffprefs = None
+	name = Perth-FI6v3
+	nperline = 81
+	numberevery = 5
+	excludestop = no
+	stringency = 1
+	restrictdiffsel = all
+	diffselrange = None
+	fracsurvivemax = None
+	sortsites = yes
+	mapmetric = functionalgroup
+	colormap = jet
+	overlay1 = ['./results/fracsurviveaboveavg/antibody_FI6v3_Perth_median.csv', 'wildtype', 'wildtype']
+	overlay2 = None
+	overlay3 = None
+	underlay = yes
+	scalebar = ['1', 'fraction surviving = 1']
+	overlaycolormap = jet
+	letterheight = 1
+	ignore_extracols = no
+	sepline = yes
+
+2018-10-10 20:37:52,753 - INFO - Reading fracsurvive from file ./results/fracsurviveaboveavg/antibody_FI6v3_Perth_median.csv...
+2018-10-10 20:37:52,790 - INFO - Read data for 566 sites.
+
+2018-10-10 20:37:52,840 - INFO - Reading overlay for wildtype from ./results/fracsurviveaboveavg/antibody_FI6v3_Perth_median.csv...
+2018-10-10 20:37:52,996 - INFO - Read overlay for 566 sites.
+
+2018-10-10 20:37:52,997 - INFO - Making logo plot ./results/fracsurviveaboveavg/Perth-FI6v3_fracsurvive.pdf...
+2018-10-10 20:37:58,775 - INFO - Successfully created logo plot.
+
+2018-10-10 20:37:58,776 - INFO - Successful completion of dms2_logoplot

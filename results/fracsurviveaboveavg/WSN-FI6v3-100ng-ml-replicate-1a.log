@@ -1,0 +1,77 @@
+2018-10-10 18:25:55,277 - INFO - Beginning execution of dms2_fracsurvive in directory /fh/fast/bloom_j/computational_notebooks/jmlee34/2018/HA_stalkbnAb_MAP
+
+2018-10-10 18:25:55,277 - INFO - Progress is being logged to ./results/fracsurviveaboveavg/WSN-FI6v3-100ng-ml-replicate-1a.log
+2018-10-10 18:25:55,285 - INFO - Version information:
+	Time and date: Wed Oct 10 18:25:55 2018
+	Platform: Linux-3.13.0-143-generic-x86_64-with-debian-jessie-sid
+	Python version: 3.6.5 |Anaconda, Inc.| (default, Apr 29 2018, 16:14:56)  [GCC 7.2.0]
+	dms_tools2 version: 2.3.0
+	Bio version: 1.72
+	HTSeq version: 0.11.0
+	pandas version: 0.23.4
+	numpy version: 1.15.1
+	IPython version: 6.5.0
+	jupyter version: 1.0.0
+	matplotlib version: 3.0.0
+	plotnine version: 0.4.0
+	natsort version: 5.4.1
+	pystan version: 2.16.0.0
+	scipy version: 1.1.0
+	seaborn version: 0.9.0
+	phydmslib version: 2.3.1
+	statsmodels version: 0.9.0
+	rpy2 version: 2.9.1
+	regex version: 2.4.146
+	umi_tools version unknown
+
+2018-10-10 18:25:55,285 - INFO - Parsed the following arguments:
+	outdir = ./results/fracsurviveaboveavg/
+	ncpus = 3
+	use_existing = yes
+	indir = ./results/renumberedcounts
+	chartype = codon_to_aa
+	aboveavg = yes
+	excludestop = yes
+	pseudocount = 5.0
+	mincount = 0
+	name = WSN-FI6v3-100ng-ml-replicate-1a
+	sel = WSN-L1-FI6v3-100ng-ml-r1
+	mock = WSN-L1-mock-r1-A
+	libfracsurvive = 0.01662
+	err = WSN-WTplasmid-A
+
+2018-10-10 18:25:55,289 - INFO - Reading selected sample counts from WSN-L1-FI6v3-100ng-ml-r1
+2018-10-10 18:25:55,326 - INFO - Reading mock-selected sample counts from WSN-L1-mock-r1-A
+2018-10-10 18:25:55,342 - INFO - Reading error-control sample counts from WSN-WTplasmid-A
+2018-10-10 18:25:55,356 - INFO - Computing fracsurvive for each mutation...
+2018-10-10 18:25:55,357 - INFO - These are the fracsurvive **above** the library average of 0.01662
+2018-10-10 18:25:59,089 - INFO - Mutations with largest mutfracsurvive:
+site wildtype mutation  mutfracsurvive
+       2        A        C            0.15
+     155        T        M            0.15
+(HA2)169        N        Q            0.13
+ (HA2)43        N        A            0.11
+      79        L        R            0.11
+     280        K        S            0.11
+      96        A        Q            0.11
+     291        N        S            0.10
+     124        E        L            0.10
+       3        F        I            0.10
+
+2018-10-10 18:25:59,090 - INFO - Writing to ./results/fracsurviveaboveavg/WSN-FI6v3-100ng-ml-replicate-1a_mutfracsurvive.csv
+2018-10-10 18:25:59,135 - INFO - Computing sitefracsurvive...
+2018-10-10 18:25:59,153 - INFO - Sites with largest avgfracsurvive:
+site  avgfracsurvive  maxfracsurvive
+      79            0.01            0.11
+       2            0.01            0.15
+ (HA2)43            0.01            0.11
+     280            0.01            0.11
+       3            0.01            0.10
+(HA2)113            0.01            0.06
+(HA2)169            0.01            0.13
+     291            0.01            0.10
+ (HA2)98            0.01            0.09
+     155            0.01            0.15
+
+2018-10-10 18:25:59,154 - INFO - Writing to ./results/fracsurviveaboveavg/WSN-FI6v3-100ng-ml-replicate-1a_sitefracsurvive.csv
+2018-10-10 18:25:59,161 - INFO - Successful completion of dms2_fracsurvive
