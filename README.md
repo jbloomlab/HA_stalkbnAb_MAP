@@ -26,7 +26,7 @@ The [./data/](./data/) directory contains the following items:
 
 The following subdirectories in the [./results/](./results/) directory are included in this repository and _not_ included in the `.gitignore`:
   * [./results/renumberedcounts/](./results/renumberedcounts/): contains codon counts of each sample in H3 numbering as a `csv` file.
-  * [./results/fracsurviveaboveavg/](./results/fracsurviveaboveavg/): contains the fraction survive values above the overall library average, in `csv` files.
+  * [./results/fracsurviveaboveavg/](./results/fracsurviveaboveavg/): contains the fraction survive values above the overall library average, in `csv` files. Also contains the logo plots for the entire gene for each sample and the averaged samples.
   * [./results/plots/](./results/plots/): contains the zoomed logo plots in `pdf` format.
 
 The analysis is performed by the [analysis_notebook.ipynb](analysis_notebook.ipynb) Jupyter notebook.
