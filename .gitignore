@@ -3,11 +3,13 @@
 !results/fracsurviveaboveavg/*.csv
 !results/fracsurviveaboveavg/*.pdf
 !results/plots/
-results/renumberedcounts/*.log
+!results/summary/*
 results/codoncounts
 results/fracsurvive
 results/FASTQ_files
 run.sbatch
 slurm*
 *.pyc
-.ipynb_checkpoints
+*.log
+.*
+!.gitignore

@@ -8,6 +8,13 @@ Experiments and computational analysis performed in this repository were perform
 Briefly, the analysis performed here maps escape mutations in the WSN/1933 H1 HA and the Perth/2009 H3 HA from two broadly-neutralizing stalk-binding antibodies, CR9114 and FI6v3.
 Escape of the WSN/1933 H1 from FI6v3 is from data in [Doud, Lee, Bloom (2018)](https://www.nature.com/articles/s41467-018-03665-3).
 
+## Viewing and running the analysis
+The analysis is run by the Jupyter notebook [analysis_notebook.ipynb](analysis_notebook.ipynb).
+A Markdown rendering of this notebook is at [results/summary/analysis_notebook.md](results/summary/analysis_notebook.md).
+To run the notebook and create the Markdown rendering, execute the script [run_nb.bash](run_nb.bash) with:
+
+    bash run_nb.bash
+
 ## Organization
 
 This repository is organized into the following subdirectories:
@@ -28,7 +35,3 @@ The following subdirectories in the [./results/](./results/) directory are inclu
   * [./results/renumberedcounts/](./results/renumberedcounts/): contains codon counts of each sample in H3 numbering as a `csv` file.
   * [./results/fracsurviveaboveavg/](./results/fracsurviveaboveavg/): contains the fraction survive values above the overall library average, in `csv` files. Also contains the logo plots for the entire gene for each sample and the averaged samples.
   * [./results/plots/](./results/plots/): contains the zoomed logo plots in `pdf` format.
-
-The analysis is performed by the [analysis_notebook.ipynb](analysis_notebook.ipynb) Jupyter notebook.
-The analysis is performed using the [dms_tools2](https://jbloomlab.github.io/dms_tools2/) software.
-
